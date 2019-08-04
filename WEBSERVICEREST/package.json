@@ -1,0 +1,20 @@
+{
+  "name": "webservicerest",
+  "version": "1.0.0",
+  "description": "afin de mettre en pratique nos competences aquis dans le cours de achiecture logiciel on doit mettre en place un webservice restfull pour la gestion d'article",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Med",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-session": "^1.16.2",
+    "mysql": "^2.17.1",
+    "path": "^0.12.7",
+    "xml": "^1.0.1",
+    "xml-formatter": "^1.1.0"
+  }
+}
