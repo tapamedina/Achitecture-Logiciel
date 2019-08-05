@@ -10,8 +10,21 @@ La couche Service regroupe tous les services, ou réalisation de cas d'utilisati
 
 ## Couche DAO
 
-La couche Métier reprend tous les objets métiers de l'application considérée. C'est ici qu'est portée la logique des règles de gestion sur ces objets. 
+
 
 ## Couche métier
+La couche Métier reprend tous les objets métiers de l'application considérée. C'est ici qu'est portée la logique des règles de gestion sur ces objets. 
 
-## Couche domaine
+## Couche persistance
+
+
+
+
+## Détails
+
+Nous avons plusieurs niveaux d'utilisateurs (admin ,utlisateurs simples) . Ces deux types d'utlisateur sont différenciés par un token (1 si admin) 2 si utilisateur simple .
+
+utilisateur simple il arrive à consulter les articles dans leur globalité ou bien par catégorie .
+
+L'admin a son interface d'administration où il peut gérer les utilisateurs et les articles. 
+
