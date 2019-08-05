@@ -87,11 +87,10 @@ if (!isset($_SESSION['id'])) {
                         <form action="deleteart/<?= $article->getId() ?>" style="display:inline;" method="GET">
                           <button class="btn btn-danger" type="submit"><i class="fas fa-trash"></i></button>
                         </form>
-                        <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#modalSubscriptionForm"><i class="fas fa-edit"></i></button>
 
+                        <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#modalSubscriptionForm"><i class="fas fa-edit"></i></button>
                         <form action="update/" style="display:inline;" method="POST">
                           <input type="hidden" name="id" value="<?= $article->getId() ?>">
-
                           <div class="modal fade" id="modalSubscriptionForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                             <div class="modal-dialog" role="document">
                               <div class="modal-content">
@@ -104,7 +103,7 @@ if (!isset($_SESSION['id'])) {
                                 <div class="modal-body mx-3">
                                   <div class="md-form mb-5">
                                     <i class="fas grey-text">Titre</i>
-                                    <input placeholder="Votre titre" type="text" id="form3" name="titre" value="<?= $article->getTitre() ?>" class="form-control validate">
+                                    <input placeholder="Votre titre" type="text" id="form3" name="titre" value="" class="form-control validate">
                                   </div>
 
                                   <div class="md-form mb-5">
@@ -117,11 +116,10 @@ if (!isset($_SESSION['id'])) {
                                     </select>
                                   </div>
 
-
                                   <div class="md-form mb-4">
                                     <i class="fas prefix grey-text">Contenu</i>
                                     <textarea name="contenu" id="" cols="30" rows="10">
-                                    <?= $article->getContenu(); ?>
+                                    
                                     </textarea>
                                   </div>
 
@@ -133,7 +131,6 @@ if (!isset($_SESSION['id'])) {
                             </div>
                           </div>
                         </form>
-
                       </td>
                     </tr>
                   <?php } ?>
