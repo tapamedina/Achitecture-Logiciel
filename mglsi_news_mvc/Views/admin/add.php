@@ -4,7 +4,7 @@
      if(isset($_POST['save'])){
           if($controller->saveArticle($_POST['titre'],$_POST['contenu'],$_POST['categorie'])){
                 $controller->backToArticle();
-          }
+          }//retourne l'utilsater vers la page des articles
      }
      
 ?>
